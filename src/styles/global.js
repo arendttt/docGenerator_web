@@ -11,6 +11,10 @@ export default createGlobalStyle`
     font-size: 16px;
   }
 
+  :focus {
+    outline: transparent;
+  }
+
   body {
     background-color: ${({ theme }) => theme.COLORS.GRAY_600};
     color: ${({ theme }) => theme.COLORS.WHITE};
@@ -19,12 +23,13 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  button, h2 {
+  button, h2, input {
     font-family: "Inter", sans-serif;
   }
 
   a {
     text-decoration: none;
+    color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
   button, a {
@@ -33,7 +38,7 @@ export default createGlobalStyle`
   }
 
   button:hover, a:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
   }
 
 `;

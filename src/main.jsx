@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme";
 import GlobalStyles from "./styles/global";
 
-import SignIn from './pages/SignIn.jsx';
+import { SignIn } from "./pages/SignIn";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
