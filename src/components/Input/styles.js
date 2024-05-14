@@ -29,5 +29,6 @@ export const Container = styled.div`
 
   > svg {
     font-size: 1.2rem;
+
   }
 `;

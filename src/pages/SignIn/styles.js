@@ -46,6 +46,10 @@ export const Form = styled.form`
     margin-bottom: 2rem;
   }
 
+  > button {
+    margin-top: 1rem;
+  }
+
   > a {
     margin-top: 2rem;
     font-size: 0.8rem;

@@ -3,7 +3,8 @@ import { Container, Form } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
-import { HiOutlineMail, HiOutlineLockClosed } from "react-icons/hi";
+import { HiOutlineMail, HiOutlineLockClosed, HiOutlineUser } from "react-icons/hi";
+
 
 export function SignUp() {
   return (
@@ -12,7 +13,13 @@ export function SignUp() {
         <h1>GERADOR DE DOCUMENTOS</h1>
       </div>
       <Form>
-        <h2>Faça login</h2>
+        <h2>Crie sua conta</h2>
+
+        <Input 
+          type="text"
+          placeholder="Seu nome"
+          icon={HiOutlineUser}
+        />
 
         <Input 
           type="text"
@@ -28,10 +35,10 @@ export function SignUp() {
 
         <Button 
           type="submit"
-          title="Entrar"
+          title="Cadastrar"
         />
 
-        <a href="">Criar uma conta</a>
+        <a href="">Ja tenho uma conta</a>
 
       </Form>
 

@@ -5,6 +5,8 @@ export const Container = styled.div`
   height: 100vh;
   padding: 3rem;
 
+  background-color: ${({ theme }) => theme.COLORS.GRAY_800};
+
   > div h1 {
     margin-top: 7rem;
     text-align: center;
@@ -21,7 +23,7 @@ export const Container = styled.div`
 
    
     > div {
-      background-color: ${({ theme }) => theme.COLORS.GRAY_800};
+      background-color: ${({ theme }) => theme.COLORS.GRAY_600};
       height: 100%;
 
       width: 60%;
@@ -46,6 +48,10 @@ export const Form = styled.form`
     margin-bottom: 2rem;
   }
 
+  > button {
+    margin-top: 1rem;
+  }
+
   > a {
     margin-top: 2rem;
     font-size: 0.8rem;
@@ -58,7 +64,7 @@ export const Form = styled.form`
   @media (min-width: ${ DEVICE_BREAKPOINTS.LG }) {
    margin: 0 auto;
 
-   padding: 15rem 3rem;
+   padding: 13rem 3rem;
   }
 
   @media (min-width: ${ DEVICE_BREAKPOINTS.XL }) {
