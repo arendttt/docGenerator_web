@@ -5,7 +5,7 @@ import { Button } from "../../components/Button";
 
 import { HiOutlineMail, HiOutlineLockClosed } from "react-icons/hi";
 
-export function SignIn() {
+export function SignUp() {
   return (
     <Container>
       <div>

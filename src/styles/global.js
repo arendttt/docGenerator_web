@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { DEVICE_BREAKPOINTS } from "./deviceBreakPoints";
 
 export default createGlobalStyle`
   * {
@@ -9,6 +10,11 @@ export default createGlobalStyle`
 
   :root {
     font-size: 16px;
+
+    @media( max-width: ${DEVICE_BREAKPOINTS.XS}) {
+      font-size: 14px;
+    }
+
   }
 
   :focus {
@@ -37,7 +43,7 @@ export default createGlobalStyle`
     transition: filter 0.2s;
   }
 
-  button:hover, a:hover {
+  button:hover {
     filter: brightness(0.8);
   }
 
