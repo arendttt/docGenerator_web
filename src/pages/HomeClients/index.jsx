@@ -1,6 +1,7 @@
-import { Container } from "./styles";
+import { Container, Section } from "./styles";
 
 import { Header } from "../../components/Header";
+import { NewDocInput } from "../../components/NewDocInput";
 
 export function HomeClients() {
   return (
@@ -8,6 +9,13 @@ export function HomeClients() {
       <Header>
         <button>Meus documentos</button>
       </Header>
+
+      <h1>NOVO DOCUMENTO</h1>
+
+      <Section>
+        <NewDocInput value="Contrato de honorários"/>
+
+      </Section>
 
     </Container>
   );
