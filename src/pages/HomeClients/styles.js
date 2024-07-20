@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
+  > h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 4.6rem 0 4rem;
+  }
   
   > div button {
     background-color: ${({ theme }) => theme.COLORS.GRAY_500};
@@ -21,5 +27,13 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  
+  padding: 1.5rem;
+
+  > div + div {
+    margin-top: 1rem;
+  }
+
+  > button {
+    margin-top: 2.5rem;
+  }
 `;

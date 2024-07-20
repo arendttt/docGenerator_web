@@ -1,12 +1,16 @@
 import { Container } from "./styles";
 
-export function NewDocInput({ ...rest }) {
+export function NewDocInput({ title }) {
   return (
     <Container>
-
-      <input type="radio" {...rest} />
-       
-
+      <div>
+        <input type="radio" id="inputRadio"/>
+        <label htmlFor="inputRadio">
+          <div className="radio"></div>
+          {title}
+        </label>
+        
+      </div>
     </Container>
   );
 };
